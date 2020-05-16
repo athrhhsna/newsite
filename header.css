@@ -1,0 +1,91 @@
+#Header {
+	background: rgba(255, 255, 255, 0.4);
+	position: fixed;
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+	z-index: 9;
+}
+#Header.header-fixed {
+
+	transition: all 0.3s ease-in-out;
+}
+#Header.header-fixed .main-menu {
+	padding: 27px 0;
+	transition: all 0.3s ease-in-out;
+}
+#Header.header-fixed .main-menu li a {
+	padding: 5px 10px;
+	transition: all 0.3s ease-in-out;
+}
+#Header.header-fixed a.menu-trigger {
+	top: 22px;
+	transition: all 0.3s ease-in-out;
+}
+#Header .main-menu {
+	width: 70%;
+	text-align: right;
+	float: right;
+	padding: 10px 0;
+	transition: all 0.3s ease-in-out;
+}
+#Header a:link { 
+text-decoration: none
+}
+
+#Header .main-menu li {
+	font-family: 'Crafty Girls';
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	
+}
+#Header .main-menu li a {
+	position: relative;
+	font-size: 16px;
+	color:#60696A;
+	padding: 10px 10px;
+}
+#Header .main-menu li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1F8193;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#Header .main-menu li a:hover::before, #Header .main-menu li a.active::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  }
+  
+  #subheader {
+font-size: 25px;
+font-family: 'Crafty Girls';
+}
+
+#glow {
+ font-family: 'Codystar';   
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #e60073, 0 0 10px #e60073, 0 0 10px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 10px #ff4da6, 0 0 10px #ff4da6, 0 0 10px #ff4da6, 0 0 10px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
